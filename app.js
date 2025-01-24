@@ -1,8 +1,46 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
-let amigos = [];    //Declaramos la variable donde se almacena los nombres
+//Declaramos la variable donde se almacena los nombres
+let amigos = [];
+let numeroAmigos = 0;
 
 
-// Ejemplo del Numero Secreto
+let nombreAmigo = document.getElementById('amigo')
+
+function asignarTextoElemento(elemento, texto) {
+    let elementoHTML = document.querySelector(elemento);
+    elementoHTML.innerHTML = texto;
+    return;
+}
+
+function agregarAmigo() {
+    
+}
+
+function sortearAmigo() {
+    
+}
+
+
+
+function limpiarCaja() {
+    document.querySelector('#amigo').value = '';
+}
+
+function reiniciarJuego() {
+    //limpiar caja
+    limpiarCaja();
+    //Indicar mensaje de intervalo de números 
+    //Generar el número aleatorio
+    //Inicializar el número intentos
+    condicionesIniciales();
+    //Deshabilitar el botón de nuevo juego
+    document.querySelector('#reiniciar').setAttribute('disabled','true');
+    
+}
+
+condicionesIniciales();
+
+/* Ejemplo del Numero Secreto
 let numeroSecreto = 0;
 let intentos = 0;
 let listaNumerosSorteados = [];
@@ -10,11 +48,6 @@ let numeroMaximo = 10;
 
 
 
-function asignarTextoElemento(elemento, texto) {
-    let elementoHTML = document.querySelector(elemento);
-    elementoHTML.innerHTML = texto;
-    return;
-}
 
 function verificarIntento() {
     let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
@@ -35,9 +68,6 @@ function verificarIntento() {
     return;
 }
 
-function limpiarCaja() {
-    document.querySelector('#valorUsuario').value = '';
-}
 
 function generarNumeroSecreto() {
     let numeroGenerado =  Math.floor(Math.random()*numeroMaximo)+1;
@@ -58,24 +88,6 @@ function generarNumeroSecreto() {
     }
 }
 
-function condicionesIniciales() {
-    asignarTextoElemento('h1','Juego del número secreto!');
-    asignarTextoElemento('p',`Indica un número del 1 al ${numeroMaximo}`);
-    numeroSecreto = generarNumeroSecreto();
-    intentos = 1;
-    console.log(numeroSecreto);
-}
 
-function reiniciarJuego() {
-    //limpiar caja
-    limpiarCaja();
-    //Indicar mensaje de intervalo de números 
-    //Generar el número aleatorio
-    //Inicializar el número intentos
-    condicionesIniciales();
-    //Deshabilitar el botón de nuevo juego
-    document.querySelector('#reiniciar').setAttribute('disabled','true');
-    
-}
 
-condicionesIniciales();
+*/
