@@ -4,7 +4,7 @@ let amigos = [];
 let numeroAmigos = 0;
 
 
-let nombreAmigo = document.getElementById('amigo')
+
 
 function asignarTextoElemento(elemento, texto) {
     let elementoHTML = document.querySelector(elemento);
@@ -13,11 +13,11 @@ function asignarTextoElemento(elemento, texto) {
 }
 
 function agregarAmigo() {
-    
+        console.log('presione boton añadir');
 }
 
 function sortearAmigo() {
-    
+    let nombreAmigo = document.getElementById('amigo')
 }
 
 
